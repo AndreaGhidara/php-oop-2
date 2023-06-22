@@ -1,0 +1,78 @@
+html {
+	font-family: 'Roboto', sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    padding:0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.card-img-container{
+    width: 100%;
+    height: 10rem;
+    max-height: 10rem;
+}
+
+img{
+    width: 100%;
+    height: 10rem;
+    max-height: 10rem;
+    object-fit: contain;
+}
+
+.card{
+    position: relative;
+    width: 80%;
+    height: 100%;
+}
+
+.card-title{
+    min-height: 4.3rem;
+    max-height: 4.3rem;
+    overflow: hidden;
+    white-space: wrap;
+    text-overflow: ellipsis;
+}
+
+
+.cardBody{
+    position: relative;
+}
+
+.price{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 0px 16px 0 5px;
+}
+
+.icon{
+    position: absolute;
+    border-radius: 10%;
+    top: -7px;
+    left: -7px;
+}
+
+.buyBtn{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}

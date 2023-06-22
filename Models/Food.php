@@ -1,11 +1,27 @@
 <?php 
-//food è un estensione di Product
-class Food extends Product { 
-    public $weight;
 
-	public function setWeight($weight) {
-        $this->weight = $weight;
-    }
+class Food extends Product {
+
+	private $calories;
+
+	public function __construct($name, $price, $description, $is_available, $quantity, $image, Category $category, $calories)
+	{
+		parent::__construct($name, $price, $description, $is_available, $quantity, $image, $category);
+		$this->calories = $calories;
+	}
+
+	public function getCalories() {
+		return $this->calories;
+	}
+
+	public function setCalories($value) {
+		$this->calories = $value;
+	}
+
+	public function getClassName() {
+		return get_class();
+	}
+
 }
 
 ?>
